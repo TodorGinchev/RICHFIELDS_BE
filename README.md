@@ -2,7 +2,7 @@
     https://github.com/h4cc/awesome-elixir#Reading
     https://github.com/oreillymedia/etudes-for-elixir
 #Links about Elixir integration in gninx
-https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-ada9398a9b2c#.1fbtcyp20
+    https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-ada9398a9b2c#.1fbtcyp20
 
 ### REQUIEREMENTS
     Using local VM for testing ($uname -a): Linux ginchet1-VirtualBox 4.2.0-27-generic #32~14.04.1-Ubuntu SMP Fri Jan 22 15:32:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
@@ -14,7 +14,7 @@ https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-
     Python 2.7.11+ ($python --version) (current version is Python 2.7.12) https://raw.githubusercontent.com/capbash/bits/master/python.bits
 
 
-### INSTALLS
+# INSTALLS
 
 ## INSTALLATION OF NGINX AND PYTHON
 #NGINX
