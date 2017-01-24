@@ -1,10 +1,10 @@
-#Links from Vicent about Elixir
+###Links from Vicent about Elixir
     https://github.com/h4cc/awesome-elixir#Reading
     https://github.com/oreillymedia/etudes-for-elixir
-#Links about Elixir integration in gninx
+###Links about Elixir integration in gninx
     https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-ada9398a9b2c#.1fbtcyp20
 
-### REQUIEREMENTS
+# REQUIREMENTS
     Using local VM for testing ($uname -a): Linux ginchet1-VirtualBox 4.2.0-27-generic #32~14.04.1-Ubuntu SMP Fri Jan 22 15:32:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
     Erlang 18+ (check with $erl) (currrent version in the local VM is Erlang/OTP 19 [erts-8.2] ) https://raw.githubusercontent.com/capbash/bits/master/erlang.bits
     Elixir 1.2+ ($elixir --version) (current version is Elixir 1.3.4) https://raw.githubusercontent.com/capbash/bits/master/elixir.bits
@@ -17,7 +17,7 @@
 # INSTALLS
 
 ## INSTALLATION OF NGINX AND PYTHON
-#NGINX
+###NGINX
     You can add this repo if you are not able to upgrade to version 1.8+
         $sudo apt-get remove nginx
         $apt-get purge nginx nginx-common
@@ -32,7 +32,7 @@
         $apt-get update
         $apt-get install nginx
     
-#PYTHON
+###PYTHON
     You can add this repo if you not able to upgrade to Python 2.7.11+
         $sudo apt-add-repository ppa:fkrull/deadsnakes-python2.7
         $sudo apt-get update
@@ -40,7 +40,7 @@
         https://raw.githubusercontent.com/capbash/bits/master/python.bits
     
 ##INSTALLATION OF ELIXIR, ERLANG, POSTRESQL and NODE.JS http://www.phoenixframework.org/docs/installation
-#Install Elixir, Erlang, Phoenix, Node.js and PostgreSQL
+###Install Elixir, Erlang, Phoenix, Node.js and PostgreSQL
     For Node.js, make sure that version is >=5.0.0
         $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
         $ nvm install stable
@@ -50,7 +50,7 @@
         sudo apt-get install postgresql postgresql-contrib
     I left without installation: inotify-tools 
 
-### ELIXIR TESTING    ######################################
+# ELIXIR TESTING    ######################################
 ##UP AND RUNNING http://www.phoenixframework.org/docs/up-and-running
     If the connection to the db fails with "invalid password for user postgres"
         try first:  
@@ -99,7 +99,7 @@
 
     Important: scope "/admin", HelloPhoenix.Admin, as: :admin do
      
-### TESTING THINGS
+# TESTING THINGS
     As explained in http://www.phoenixframework.org/docs/routing, I have added ^resources "/RICHFIELDS/users", UserController^ in file ^./web/router.ex^
     Then I added the ./web/controllers/UsersController
     Then I added the ./web/views/users_view
@@ -115,13 +115,8 @@
     Check this out: https://robots.thoughtbot.com/testing-a-phoenix-elixir-json-api
     
     
-###    NGINX+ELIXIR INTEGRATION TESTING   
+#    NGINX+ELIXIR INTEGRATION TESTING   
     Following tutorial: https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-ada9398a9b2c#.1fbtcyp20
     Note: By default, the configuration file is named nginx.conf and placed in the directory /usr/local/nginx/conf, /etc/nginx, or /usr/local/etc/nginx
         $nano /etc/nginx/nginx.conf
     Restart ngingx: $sudo nginx -s reload 
-
-
-
-    
-    
