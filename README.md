@@ -141,7 +141,8 @@ end
 ```
 Important: scope "/admin", HelloPhoenix.Admin, as: :admin do
      
-# TESTING THINGS
+# TESTING 
+## TESTING HTTPS+JSON ON ELIXIR
 As explained in http://www.phoenixframework.org/docs/routing, I have added 'resources "/api/users", UserController' in file './web/router.ex'
 
 Then I added the ./web/controllers/UsersController
@@ -164,7 +165,15 @@ Example of post request:
 curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost/api/users/
 ```
 Check this out: https://robots.thoughtbot.com/testing-a-phoenix-elixir-json-api
-    
+   
+## TESTING POSTGRESQL
+First enter into posgtres account (default pwd is postgres)
+```
+su postgres
+```
+Follow tutorial http://www.phoenixframework.org/docs/ecto-models
+
+
     
 #    NGINX+ELIXIR INTEGRATION TESTING   
 Following tutorial: https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-ada9398a9b2c#.1fbtcyp20
