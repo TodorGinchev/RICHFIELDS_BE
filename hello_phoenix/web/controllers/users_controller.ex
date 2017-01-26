@@ -5,7 +5,6 @@ defmodule HelloPhoenix.UsersController do
   use HelloPhoenix.Web, :controller
 
   def index(conn, _params) do
-    Logger.info "TODOR UsersController index"
     render conn, "index.html"
   end
 
@@ -15,13 +14,15 @@ defmodule HelloPhoenix.UsersController do
   
 
   def create(conn, params) do
-    Logger.info "TODOR UsersController post"
+    Logger.info "api/users POST received"
     #json(conn, %{body: params})
     json(conn, params)
+    
+
   end
 
   def get(conn,%{"user"=>user}) do
-    Logger.info "TODOR UsersController get"
+    
   end
 
 end
