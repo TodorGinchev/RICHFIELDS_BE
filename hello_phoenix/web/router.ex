@@ -21,12 +21,13 @@ defmodule HelloPhoenix.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
-    #resources "/users", UsersController
+    resources "/users", UserController
   end
 
   scope "/api", HelloPhoenix do
    pipe_through :api
    resources "/users", UsersController
+   
   end
  
 
