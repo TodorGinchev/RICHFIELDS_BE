@@ -142,7 +142,7 @@ end
 Important: scope "/admin", HelloPhoenix.Admin, as: :admin do
      
 # TESTING THINGS
-As explained in http://www.phoenixframework.org/docs/routing, I have added 'resources "/RICHFIELDS/users", UserController' in file './web/router.ex'
+As explained in http://www.phoenixframework.org/docs/routing, I have added 'resources "/api/users", UserController' in file './web/router.ex'
 
 Then I added the ./web/controllers/UsersController
 
@@ -155,13 +155,13 @@ For testing I use curl:
 
 Example of JSON post request:
 ```
-curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:3000/api/login
+curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:4000/api/login
 ```
 where (-H is short for --header, -d for --data.)
 
 Example of post request:
 ```
-curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:4000/users/
+curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost/api/users/
 ```
 Check this out: https://robots.thoughtbot.com/testing-a-phoenix-elixir-json-api
     
