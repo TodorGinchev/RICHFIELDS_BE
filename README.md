@@ -20,10 +20,12 @@ Nginx 1.8+ ($nginx -v) (current version is nginx version: nginx/1.11.8) https://
 
 Python 2.7.11+ ($python --version) (current version is Python 2.7.12) https://raw.githubusercontent.com/capbash/bits/master/python.bits
 
+Let's encrypt / certbot
+
 # INSTALLS
 
 ## INSTALLATION OF NGINX AND PYTHON
-###NGINX
+###NGINX and Let's encrypt
 You can add this repo if you are not able to upgrade to version 1.8+
 ```
 sudo apt-get remove nginx
@@ -42,7 +44,16 @@ cat nginx_signing.key | sudo apt-key add -
 apt-get update
 apt-get install nginx
 ```
-    
+For Let's encrypt / certbot
+```
+cd /usr/local/sbin
+sudo wget https://dl.eff.org/certbot-auto
+sudo chmod a+x /usr/local/sbin/certbot-auto
+```
+And then
+```
+letsencrypt-auto certonly -a manual --rsa-key-size 4096 --email todor.a.ginchev@aalto.fi -d precious3.research.netlab.hut.fi
+```
 ###PYTHON
 You can add this repo if you not able to upgrade to Python 2.7.11+
 ```
@@ -65,6 +76,7 @@ For PostgreSQL
 sudo apt-get update
 sudo apt-get install postgresql postgresql-contrib
 ```
+
 I left without installation: inotify-tools 
 
 # ELIXIR TUTORIAL NOTES
@@ -130,7 +142,7 @@ end
 Important: scope "/admin", HelloPhoenix.Admin, as: :admin do
      
 # TESTING THINGS
-As explained in http://www.phoenixframework.org/docs/routing, I have added 'resources "/RICHFIELDS/users", UserController' in file './web/router.ex'
+As explained in http://www.phoenixframework.org/docs/routing, I have added 'resources "/api/users", UserController' in file './web/router.ex'
 
 Then I added the ./web/controllers/UsersController
 
@@ -143,13 +155,13 @@ For testing I use curl:
 
 Example of JSON post request:
 ```
-curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:3000/api/login
+curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:4000/api/login
 ```
 where (-H is short for --header, -d for --data.)
 
 Example of post request:
 ```
-curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:4000/users/
+curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost/api/users/
 ```
 Check this out: https://robots.thoughtbot.com/testing-a-phoenix-elixir-json-api
     
