@@ -173,9 +173,25 @@ su postgres
 ```
 Follow tutorial http://www.phoenixframework.org/docs/ecto-models
 
+Create table:
+```
+mix phoenix.gen.html PostsqlController postsqluser name:string email:string gender:boolean birthyear:integer nickname:string
+```
+Add route:
+```
+resources "/postsqluser", PostsqlController
+```
+Create and migrate:
+```
+mix ecto.create
+mix ecto.migrate
+```
+
+
+
 
     
-#    NGINX+ELIXIR INTEGRATION TESTING   
+#   NGINX+ELIXIR INTEGRATION TESTING   
 Following tutorial: https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-ada9398a9b2c#.1fbtcyp20
 
 Note: By default, the configuration file is named nginx.conf and placed in the directory '/usr/local/nginx/conf', '/etc/nginx', or '/usr/local/etc/nginx'
@@ -186,3 +202,5 @@ Restart ngingx:
 ```
 sudo nginx -s reload 
 ```
+
+#   
