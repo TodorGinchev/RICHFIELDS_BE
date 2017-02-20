@@ -13,13 +13,18 @@
   </li>
 
   <li>
-    <strong>Bio:</strong>
-    <%= @user.bio %>
+    <strong>Gender:</strong>
+    <%= @user.gender %>
   </li>
 
   <li>
-    <strong>Number of pets:</strong>
-    <%= @user.number_of_pets %>
+    <strong>Birthyear:</strong>
+    <%= @user.birthyear %>
+  </li>
+
+  <li>
+    <strong>Nickname:</strong>
+    <%= @user.nickname %>
   </li>
 
 </ul>

@@ -2,12 +2,12 @@ defmodule HelloPhoenix.UserControllerTest do
   use HelloPhoenix.ConnCase
 
   alias HelloPhoenix.User
-  @valid_attrs %{bio: "some content", email: "some content", name: "some content", number_of_pets: 42}
+  @valid_attrs %{birthyear: 42, email: "some content", gender: true, name: "some content", nickname: "some content"}
   @invalid_attrs %{}
 
   test "lists all entries on index", %{conn: conn} do
     conn = get conn, user_path(conn, :index)
-    assert html_response(conn, 200) =~ "Listing users"
+    assert html_response(conn, 200) =~ "Listing postgresql"
   end
 
   test "renders form for new resources", %{conn: conn} do

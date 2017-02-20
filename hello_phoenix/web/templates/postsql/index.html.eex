@@ -1,0 +1,34 @@
+<h2>Listing postsqluser</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Gender</th>
+      <th>Birthyear</th>
+      <th>Nickname</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for postsql <- @postsqluser do %>
+    <tr>
+      <td><%= postsql.name %></td>
+      <td><%= postsql.email %></td>
+      <td><%= postsql.gender %></td>
+      <td><%= postsql.birthyear %></td>
+      <td><%= postsql.nickname %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: postsql_path(@conn, :show, postsql), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: postsql_path(@conn, :edit, postsql), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: postsql_path(@conn, :delete, postsql), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New postsql", to: postsql_path(@conn, :new) %>

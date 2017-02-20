@@ -1,11 +1,12 @@
 defmodule HelloPhoenix.User do
   use HelloPhoenix.Web, :model
 
-  schema "users" do
+  schema "postgresql" do
     field :name, :string
     field :email, :string
-    field :bio, :string
-    field :number_of_pets, :integer
+    field :gender, :boolean, default: false
+    field :birthyear, :integer
+    field :nickname, :string
 
     timestamps()
   end
@@ -15,7 +16,7 @@ defmodule HelloPhoenix.User do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:name, :email, :bio, :number_of_pets])
-    |> validate_required([:name, :email, :bio, :number_of_pets])
+    |> cast(params, [:name, :email, :gender, :birthyear, :nickname])
+    |> validate_required([:name, :email, :gender, :birthyear, :nickname])
   end
 end

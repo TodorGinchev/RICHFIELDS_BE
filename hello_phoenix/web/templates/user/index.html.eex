@@ -1,23 +1,25 @@
-<h2>Listing users</h2>
+<h2>Listing postgresql</h2>
 
 <table class="table">
   <thead>
     <tr>
       <th>Name</th>
       <th>Email</th>
-      <th>Bio</th>
-      <th>Number of pets</th>
+      <th>Gender</th>
+      <th>Birthyear</th>
+      <th>Nickname</th>
 
       <th></th>
     </tr>
   </thead>
   <tbody>
-<%= for user <- @users do %>
+<%= for user <- @postgresql do %>
     <tr>
       <td><%= user.name %></td>
       <td><%= user.email %></td>
-      <td><%= user.bio %></td>
-      <td><%= user.number_of_pets %></td>
+      <td><%= user.gender %></td>
+      <td><%= user.birthyear %></td>
+      <td><%= user.nickname %></td>
 
       <td class="text-right">
         <%= link "Show", to: user_path(@conn, :show, user), class: "btn btn-default btn-xs" %>

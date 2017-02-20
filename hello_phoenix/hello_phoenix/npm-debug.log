@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ginchet1/.nvm/versions/node/v6.9.1/bin/node',
+1 verbose cli   '/home/ginchet1/.nvm/versions/node/v6.9.1/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@4.0.3
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchDirectoryPackageData phoenix
+20 silly fetchOtherPackageData phoenix_html@file:deps/phoenix_html
+21 silly cache add args [ 'phoenix_html@file:deps/phoenix_html', null ]
+22 verbose cache add spec phoenix_html@file:deps/phoenix_html
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: 'phoenix_html@file:deps/phoenix_html',
+23 silly cache add   scope: null,
+23 silly cache add   escapedName: 'phoenix_html',
+23 silly cache add   name: 'phoenix_html',
+23 silly cache add   rawSpec: 'file:deps/phoenix_html',
+23 silly cache add   spec: '/home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix_html',
+23 silly cache add   type: 'local' }
+24 error addLocal Could not install /home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix_html
+25 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix_html'
+25 silly fetchPackageMetaData     at Error (native)
+25 silly fetchPackageMetaData  error for phoenix_html@file:deps/phoenix_html { Error: ENOENT: no such file or directory, open '/home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix_html'
+25 silly fetchPackageMetaData     at Error (native)
+25 silly fetchPackageMetaData   errno: -2,
+25 silly fetchPackageMetaData   code: 'ENOENT',
+25 silly fetchPackageMetaData   syscall: 'open',
+25 silly fetchPackageMetaData   path: '/home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix_html' }
+26 silly resolveWithNewModule phoenix@1.2.1 checking installable status
+27 silly cache add args [ 'phoenix@file:deps/phoenix', null ]
+28 verbose cache add spec phoenix@file:deps/phoenix
+29 silly cache add parsed spec Result {
+29 silly cache add   raw: 'phoenix@file:deps/phoenix',
+29 silly cache add   scope: null,
+29 silly cache add   escapedName: 'phoenix',
+29 silly cache add   name: 'phoenix',
+29 silly cache add   rawSpec: 'file:deps/phoenix',
+29 silly cache add   spec: '/home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix',
+29 silly cache add   type: 'directory' }
+30 verbose addLocalDirectory /home/ginchet1/.npm/phoenix/1.2.1/package.tgz not in flight; packing
+31 verbose correctMkdir /home/ginchet1/.npm correctMkdir not in flight; initializing
+32 info lifecycle phoenix@1.2.1~prepublish: phoenix@1.2.1
+33 silly lifecycle phoenix@1.2.1~prepublish: no script for prepublish, continuing
+34 info lifecycle phoenix@1.2.1~prepare: phoenix@1.2.1
+35 silly lifecycle phoenix@1.2.1~prepare: no script for prepare, continuing
+36 verbose tar pack [ '/home/ginchet1/.npm/phoenix/1.2.1/package.tgz',
+36 verbose tar pack   '/home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix' ]
+37 verbose tarball /home/ginchet1/.npm/phoenix/1.2.1/package.tgz
+38 verbose folder /home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix
+39 verbose addLocalTarball adding from inside cache /home/ginchet1/.npm/phoenix/1.2.1/package.tgz
+40 verbose correctMkdir /home/ginchet1/.npm correctMkdir not in flight; initializing
+41 silly cache afterAdd phoenix@1.2.1
+42 verbose afterAdd /home/ginchet1/.npm/phoenix/1.2.1/package/package.json not in flight; writing
+43 verbose correctMkdir /home/ginchet1/.npm correctMkdir not in flight; initializing
+44 verbose afterAdd /home/ginchet1/.npm/phoenix/1.2.1/package/package.json written
+45 silly rollbackFailedOptional Starting
+46 silly rollbackFailedOptional Finishing
+47 silly runTopLevelLifecycles Finishing
+48 silly install printInstalled
+49 verbose stack Error: ENOENT: no such file or directory, open '/home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix_html'
+49 verbose stack     at Error (native)
+50 verbose cwd /home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix
+51 error Linux 4.2.0-27-generic
+52 error argv "/home/ginchet1/.nvm/versions/node/v6.9.1/bin/node" "/home/ginchet1/.nvm/versions/node/v6.9.1/bin/npm" "install"
+53 error node v6.9.1
+54 error npm  v4.0.3
+55 error path /home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix_html
+56 error code ENOENT
+57 error errno -2
+58 error syscall open
+59 error enoent ENOENT: no such file or directory, open '/home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix_html'
+60 error enoent ENOENT: no such file or directory, open '/home/ginchet1/git/RICHFIELDS_BE/hello_phoenix/hello_phoenix/deps/phoenix_html'
+60 error enoent This is most likely not a problem with npm itself
+60 error enoent and is related to npm not being able to find a file.
+61 verbose exit [ -2, true ]
