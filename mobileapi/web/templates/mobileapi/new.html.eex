@@ -1,0 +1,6 @@
+<h2>New mobileapi</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: mobileapi_path(@conn, :create) %>
+
+<%= link "Back", to: mobileapi_path(@conn, :index) %>

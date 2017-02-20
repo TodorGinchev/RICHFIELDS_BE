@@ -1,0 +1,28 @@
+<h2>Show mobileapi</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @mobileapi.name %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @mobileapi.email %>
+  </li>
+
+  <li>
+    <strong>Bio:</strong>
+    <%= @mobileapi.bio %>
+  </li>
+
+  <li>
+    <strong>Number of pets:</strong>
+    <%= @mobileapi.number_of_pets %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: mobileapi_path(@conn, :edit, @mobileapi) %>
+<%= link "Back", to: mobileapi_path(@conn, :index) %>

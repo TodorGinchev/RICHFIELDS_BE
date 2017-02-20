@@ -1,0 +1,32 @@
+<h2>Listing mobileapi</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Bio</th>
+      <th>Number of pets</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for mobileapi <- @mobileapi do %>
+    <tr>
+      <td><%= mobileapi.name %></td>
+      <td><%= mobileapi.email %></td>
+      <td><%= mobileapi.bio %></td>
+      <td><%= mobileapi.number_of_pets %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: mobileapi_path(@conn, :show, mobileapi), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: mobileapi_path(@conn, :edit, mobileapi), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: mobileapi_path(@conn, :delete, mobileapi), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New mobileapi", to: mobileapi_path(@conn, :new) %>

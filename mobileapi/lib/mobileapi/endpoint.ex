@@ -36,7 +36,7 @@ defmodule Mobileapi.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_mobileapi_key",
-    signing_salt: "09mSZkJR"
+    signing_salt: "CVQOuGUA"
 
   plug Mobileapi.Router
 end
