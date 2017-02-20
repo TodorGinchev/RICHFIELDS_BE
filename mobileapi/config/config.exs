@@ -12,7 +12,7 @@ config :mobileapi,
 # Configures the endpoint
 config :mobileapi, Mobileapi.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "NKuREC5Vt89UJCOCNAmyIXzUlDFyfh5YDTAkf2aM1bdNI2+A2dXLXhyg0IhoPVqD",
+  secret_key_base: "R+z/WIUFbaXDQhHowis9OBKHGgjcNkofM4HDIg4dE0emzP5YLpTybeo3Bls2+LgA",
   render_errors: [view: Mobileapi.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Mobileapi.PubSub,
            adapter: Phoenix.PubSub.PG2]

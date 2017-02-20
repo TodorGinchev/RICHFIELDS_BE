@@ -11,9 +11,9 @@ config :logger, level: :warn
 
 # Configure your database
 config :mobileapi, Mobileapi.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "",
   database: "mobileapi_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
