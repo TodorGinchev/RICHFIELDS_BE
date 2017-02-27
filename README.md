@@ -32,10 +32,15 @@ sudo apt-get remove nginx
 apt-get purge nginx nginx-common
 sudo nano /etc/apt/sources.list
 ```
-Add these lines:
+Add these lines for UBUNTU:
 ```
 deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx
 deb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx
+```
+Or these for DEBIAN:
+```
+deb http://nginx.org/packages/debian/ wheezy nginx
+deb-src http://nginx.org/packages/debian/ wheezy nginx
 ```
 Get signing key and install
 ```
