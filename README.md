@@ -1,12 +1,9 @@
-###Links from Vicent about Elixir
-https://github.com/h4cc/awesome-elixir#Reading
-https://github.com/oreillymedia/etudes-for-elixir
-###Links about Elixir integration in nginx
-https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-ada9398a9b2c#.1fbtcyp20
 
 # REQUIREMENTS
 
 Using local VM for testing ($uname -a): Linux ginchet1-VirtualBox 4.2.0-27-generic #32~14.04.1-Ubuntu SMP Fri Jan 22 15:32:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Using Aalto Server for further testing: Linux precious 3.2.0-4-amd64 #1 SMP Debian 3.2.73-2+deb7u3 x86_64 GNU/Linux
+
 
 Erlang 18+ (check with $erl) (currrent version in the local VM is Erlang/OTP 19 [erts-8.2] ) https://raw.githubusercontent.com/capbash/bits/master/erlang.bits
 
@@ -208,4 +205,10 @@ Restart ngingx:
 sudo nginx -s reload 
 ```
 
-#   
+# Documentation
+###Links from Vicent about Elixir
+https://github.com/h4cc/awesome-elixir#Reading
+https://github.com/oreillymedia/etudes-for-elixir
+###Links about Elixir integration in nginx
+https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-ada9398a9b2c#.1fbtcyp20
+
