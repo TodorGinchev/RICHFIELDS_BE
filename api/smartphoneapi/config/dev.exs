@@ -6,8 +6,8 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :hello_phoenix, HelloPhoenix.Endpoint,
-  http: [port: 4002],
+config :smartphoneapi, Smartphoneapi.Endpoint,
+  http: [port: 4001],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -16,7 +16,7 @@ config :hello_phoenix, HelloPhoenix.Endpoint,
 
 
 # Watch static and templates for browser reloading.
-config :hello_phoenix, HelloPhoenix.Endpoint,
+config :smartphoneapi, Smartphoneapi.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
@@ -34,10 +34,10 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
-config :hello_phoenix, HelloPhoenix.Repo,
+config :smartphoneapi, Smartphoneapi.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "hello_phoenix_dev",
+  database: "smartphoneapi_dev",
   hostname: "localhost",
   pool_size: 10

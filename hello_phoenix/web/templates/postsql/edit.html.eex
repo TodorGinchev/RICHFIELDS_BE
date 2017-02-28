@@ -1,6 +1,0 @@
-<h2>Edit postsql</h2>
-
-<%= render "form.html", changeset: @changeset,
-                        action: postsql_path(@conn, :update, @postsql) %>
-
-<%= link "Back", to: postsql_path(@conn, :index) %>

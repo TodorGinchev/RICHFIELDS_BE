@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :hello_phoenix,
-  ecto_repos: [HelloPhoenix.Repo]
+config :smartphoneapi,
+  ecto_repos: [Smartphoneapi.Repo]
 
 # Configures the endpoint
-config :hello_phoenix, HelloPhoenix.Endpoint,
+config :smartphoneapi, Smartphoneapi.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "w+6D2VP/l+GN7/YciT/WlIJ4W2CfCzk7j8XtBcybdcfmrPwVyJYioYwNCSFQSNFl",
-  render_errors: [view: HelloPhoenix.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: HelloPhoenix.PubSub,
+  secret_key_base: "KL7SAwMI+EB/vDGo68m/ZqFitrHcENofE1lcWTu+0rlUkWdQI1MpWy3bV/G3SmMg",
+  render_errors: [view: Smartphoneapi.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Smartphoneapi.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

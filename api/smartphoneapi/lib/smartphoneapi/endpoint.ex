@@ -1,14 +1,14 @@
-defmodule HelloPhoenix.Endpoint do
-  use Phoenix.Endpoint, otp_app: :hello_phoenix
+defmodule Smartphoneapi.Endpoint do
+  use Phoenix.Endpoint, otp_app: :smartphoneapi
 
-  socket "/socket", HelloPhoenix.UserSocket
+  socket "/socket", Smartphoneapi.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :hello_phoenix, gzip: false,
+    at: "/", from: :smartphoneapi, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -35,8 +35,8 @@ defmodule HelloPhoenix.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_hello_phoenix_key",
-    signing_salt: "8waH89k+"
+    key: "_smartphoneapi_key",
+    signing_salt: "Mk79ZmXC"
 
-  plug HelloPhoenix.Router
+  plug Smartphoneapi.Router
 end
