@@ -212,4 +212,6 @@ https://github.com/h4cc/awesome-elixir#Reading
 https://github.com/oreillymedia/etudes-for-elixir
 ###Links about Elixir integration in nginx
 https://medium.com/@a4word/setting-up-phoenix-elixir-with-nginx-and-letsencrypt-ada9398a9b2c#.1fbtcyp20
+###Accepted ECTO types
+https://hexdocs.pm/ecto/Ecto.Schema.html
 
