@@ -25,9 +25,9 @@ defmodule Todo.Router do
   pipe_through :browser # Use the default browser stack
   get "/", PageController, :index
   resources "/users", UserController, only: [:new, :create]
-  resources "/sessions", SessionController, only: [:new, :create,  
-                                                   :delete]
+  resources "/sessions", SessionController, only: [:new, :create, :delete]
 end
+
 scope "/", Todo do
   pipe_through [:browser, :browser_auth]
   resources "/users", UserController, only: [:show, :index, :update]
