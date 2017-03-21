@@ -1,0 +1,70 @@
+#Smarthone api
+##Send post example to http://precious.research.netlab.hut.fi/smartphoneapi/usage
+{
+  "usage":{
+  	  "userid": "1",
+      "startedate": "2017-02-22T18:00:42",
+      "duration": "60000",
+      "activity": "23"
+  }
+}
+##Expect result
+{
+  "data": {
+    "userid": 1,
+    "startedate": "2017-02-22T18:00:42",
+    "id": 6, {
+    "duration": "60000", "user":{
+    "activity": "23" "email": "test3@abc.com",
+  }      "password": "test3",
+}
+##Send get to http://precious.research.netlab.hut.fi/smartphoneapi/usage
+
+##Expect reply
+{
+  "data": [
+    {
+      "userid": 1,
+      "startedate": "2017-02-28T12:10:33",
+      "id": 1,
+      "duration": "30",
+      "activity": "mainscreen"
+    },
+    {
+      "userid": 1,
+      "startedate": "2017-02-28T12:11:33", "nickname": "Test3",
+      "id": 2, "height": "165.1",
+      "duration": "30", "weight": "55.6",
+      "activity": "mainscreen" "groupid": "9005",
+    }, "birthdate": "1993-02-22T18:00:42",
+    { "gender": "false"
+      "userid": 1, }
+      "startedate": "2017-02-28T12:15:33",}
+      "id": 3,
+      "duration": "30",
+      "activity": "mainscreen"
+    },
+    {
+      "userid": 1,
+      "startedate": "2017-02-28T12:17:33",
+      "id": 4,
+      "duration": "30",
+      "activity": "mainscreen"
+    },
+    {
+      "userid": 1,
+      "startedate": "2017-02-28T12:21:33",
+      "id": 5,
+      "duration": "30",
+      "activity": "mainscreen"
+    },
+    {
+      "userid": 1,
+      "startedate": "2017-02-22T18:00:42",
+      "id": 6,
+      "duration": "60000",
+      "activity": "23"
+    }
+  ]
+}
+
