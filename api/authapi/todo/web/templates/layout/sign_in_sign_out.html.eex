@@ -1,0 +1,11 @@
+# web/templates/layout/sign_in_sign_out.html.eex
+<%= if logged_in?(@conn) do %>
+  <%= link "Sign out", to: session_path(@conn, :delete, :access),  
+      method: :delete, class: "btn btn-danger" %><br>
+  <%= current_user(@conn).email %>
+<% else %>
+  <%= link "Create new account", to: user_path(@conn, :new), 
+      class: "btn btn-danger" %>
+  <%= link "Sign in", to: session_path(@conn, :new), 
+      class: "btn btn-danger" %>
+<% end %>

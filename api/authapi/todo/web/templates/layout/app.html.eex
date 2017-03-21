@@ -32,4 +32,13 @@
     </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
+
+<header class="header">
+  <nav role="navigation">
+    <ul class="nav nav-pills pull-right">
+      <%= render "sign_in_sign_out.html", conn: @conn %><br><br>
+    </ul>
+  </nav>
+  <span class="logo"></span>
+</header>
 </html>
