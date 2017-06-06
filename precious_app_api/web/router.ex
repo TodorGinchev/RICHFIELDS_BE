@@ -23,5 +23,7 @@ defmodule PreciousAppApi.Router do
   scope "/precious_app", PreciousAppApi do
     pipe_through :api
     resources "/pa_sensors", PasensorController
+    resources "/auto_pa_raw", AutoPaRawController
+   
   end
 end
