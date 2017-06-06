@@ -190,6 +190,9 @@ mix ecto.create
 mix ecto.migrate
 ```
 
+The command listed (\d users) should be called inside your PostgreSQL interactive terminal (psql) prompt:
+
+psql -U postgres -W -h localhost hello_phoenix_dev
 
 
 
