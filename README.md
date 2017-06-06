@@ -191,9 +191,12 @@ mix ecto.migrate
 ```
 
 The command listed (\d users) should be called inside your PostgreSQL interactive terminal (psql) prompt:
-
+```
 psql -U postgres -W -h localhost hello_phoenix_dev
+```
 
+### Ecto data types
+https://hexdocs.pm/ecto/Ecto.Schema.html
 
 
     
