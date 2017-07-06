@@ -22,8 +22,9 @@ defmodule TodoApi.Router do
   scope "/auth", TodoApi do
   pipe_through :api
 
-  resources "/todos", TodoController, except: [:new, :edit]
+    resources "/todos", TodoController, except: [:new, :edit]
     resources "/users", UserController, only: [:create]
+    resources "/sessions", SessionController, only: [:create]
   end
 
 
